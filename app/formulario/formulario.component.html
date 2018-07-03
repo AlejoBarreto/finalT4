@@ -1,0 +1,23 @@
+
+<form class="form-horizontal" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Nombre Producto</label>
+    <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre del Producto" [(ngModel)]="model.nombre" name="nombre">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Cantidad</label>
+    <input type="number" class="form-control" id="cantidad" placeholder="Ingrese Cantidad" [(ngModel)]="model.cantidad" name="cantidad">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Precio</label>
+    <input type="number" class="form-control" id="precio" placeholder="Ingrese precio" [(ngModel)]="model.precio" name="precio">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Categoria</label>
+    <select class="form-control" id="categoria" [(ngModel)]="model.categoria" name="categoria">
+      <option>Interior</option>
+      <option>Exterior</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Ingresar</button>
+</form>
